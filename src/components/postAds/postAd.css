@@ -1,0 +1,30 @@
+.item_div{
+    text-align: center !important;
+}
+.display_flex{
+    display: flex;
+    
+}
+.justify_center{
+    flex-direction: column;
+    align-content: center;
+}
+.formControl_ui{
+    width: 100%;
+}
+.main_container{
+    list-style: none;
+}
+ 
+.form_container{
+    margin-top: 5% !important;
+}
+.w-100{
+    width: 100% !important;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
+.formControl_ui:first-child label {
+    padding-left: 15px !important
+}

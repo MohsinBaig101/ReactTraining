@@ -1,0 +1,1 @@
+export const api_baseUrl = 'http://mongostaging.demo.commersys.com/storage/'

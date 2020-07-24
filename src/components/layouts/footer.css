@@ -1,0 +1,10 @@
+.list-style-popular{
+    list-style: none;
+    padding-left: 10px;
+}
+.footer-container{
+    margin-top: 8%;
+}
+.footer-container ul li {
+    color: #777270;
+}

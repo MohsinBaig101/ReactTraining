@@ -1,0 +1,59 @@
+.img-profile{
+    width: 50% !important;
+    max-height: 174px !important;
+    height: 174px !important;
+    
+    border-radius: 50%;
+}
+.img-outer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.name_outer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.ul_outer_profile{
+    margin-top: 8%;
+}
+.ul_profile{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;   
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    font-size: 76%;
+}
+.profile_svg{
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.menu_profile{
+    margin-top: 5%;
+}
+.left_profile_menu{
+    border-right: 1px solid black;
+    border-right-width: 1px;
+    padding-right: 8px;
+}
+.profile_tag{
+    display: flex;
+    justify-content: space-between;
+}
+.btn_profile_change_password{
+    display: flex;
+    list-style: none;
+}
+.p-4{
+    padding: 4%;
+}
+.custom_m-2{
+    /* margin-top:3.5% !important; */
+    margin: 3% !important;
+}
