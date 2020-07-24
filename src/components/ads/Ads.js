@@ -25,12 +25,15 @@ const useStyles = makeStyles((theme)=>({
      const classes = useStyles()
      const [page, setPage] = React.useState(1);
      const handleChange = (event, value) => {
-         props.pagination(value)
-        setPage(value);
+         if(value !== page){
+            props.pagination(value)
+            setPage(value);
+         }
+         
       };
     return (
         <>
-         {console.log(props.posts)}
+       
             <Grid container className={classes.root} >
                 <div>
                     <Backdrop className={classes.backdrop} open={props.loader}>
@@ -61,12 +64,14 @@ const useStyles = makeStyles((theme)=>({
 
             
             </Grid>
-            {(!_.isEmpty(props.links) && !_.isEmpty(props.links.next) && !_.isEmpty(props.posts)) ? 
+             {console.log(props)}
+            {(!_.isEmpty(props.links)    && !_.isEmpty(props.posts)) ? 
                 <Grid container className="mt-10 pagination-container" >
                     <Pagination page={page} 
                                 onChange={handleChange}  
                                 count={(props.meta) ? props.meta.last_page : 0} 
-                                color="primary" />
+                                color="primary"
+                     />
                 </Grid>
             : (props.noRecord === true) ? <NoRecord /> : ''}
         </>
