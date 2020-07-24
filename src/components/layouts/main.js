@@ -56,10 +56,12 @@ const Main = () => {
                         <Route path="/login" component={LoginComponent} />
                         <ProtectedRoute path="/post-ad" component={PostAdContainer} />
                         <ProtectedRoute path="/profile" component={ProfileContainer} />
+                        
                         <Layout>
                           <Route path="/ads" component={AdsContainer} />
+                          <Redirect path="/" to = "/ads" />
                         </Layout>
-                        <Redirect path="/" to = "/ads" />
+                        
                     </Switch>
                     <Footer />
                 </Router>
